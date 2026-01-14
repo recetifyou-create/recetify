@@ -9,31 +9,85 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- JSON-LD: Organization -->
+  
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://recetify.yoga/#organization",
+  "name": "Recetify",
+  "url": "https://recetify.yoga",
+  "description": "Recetify organizes immersive nature experiences, plant identification walks, and AI-assisted learning in South Estonia.",
+  "areaServed": {
+    "@type": "Place",
+    "name": "South Estonia"
+  },
+  "knowsAbout": [
+    "Plant identification",
+    "Artificial intelligence",
+    "AI-assisted learning",
+    "Nature education",
+    "Yoga (planned)",
+    "Software development (planned)"
+  ],
+  "sameAs": [
+    "https://www.facebook.com/people/Recetify/61578528077390/"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://recetify.yoga/#plant-walk-service",
+  "name": "Guided plant identification walk with AI",
+  "description": "Small-group guided plant identification walk combining nature exploration with AI-assisted learning tools.",
+  "provider": {
     "@type": "Organization",
-    "name": "Recetify",
-    "url": "https://recetify.yoga",
-    "description": "Recetify organizes immersive nature experiences, plant identification walks, and AI-assisted learning in South Estonia. Future activities include yoga and software development.",
-    "areaServed": {
+    "@id": "https://recetify.yoga/#organization"
+  },
+  "areaServed": "EE",
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "serviceLocation": {
       "@type": "Place",
-      "name": "South Estonia"
-    },
-    "knowsAbout": [
-      "Plant identification",
-      "Artificial intelligence",
-      "AI-assisted learning",
-      "Nature education",
-      "Yoga (planned)",
-      "Software development (planned)"
-    ],
-    "sameAs": [
-      "https://www.facebook.com/people/Recetify/61578528077390/"
-    ]
-  }
-  </script>
+      "name": "Outdoor locations across Estonia"
+    }
+  },
+  "availabilityStarts": "2026-04-01",
+  "availabilityEnds": "2026-10-31",
+    "additionalProperty": {
+    "@type": "PropertyValue",
+    "name": "Seasonality",
+    "value": "Available annually from April 1 to October 31. Outdoor sessions require temperatures above +5°C."
+}
+
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Offer",
+  "@id": "https://recetify.yoga/#offer-plant-walk",
+  "price": "77",
+  "priceCurrency": "EUR",
+  "priceSpecification": {
+    "@type": "UnitPriceSpecification",
+    "price": "77",
+    "priceCurrency": "EUR",
+    "unitText": "per person"
+  },
+  "itemOffered": {
+    "@type": "Service",
+    "@id": "https://recetify.yoga/#plant-walk-service"
+  },
+  "availability": "https://schema.org/InStock"
+}
+</script>
+
+
+
+
 </head>
 
 <body>
@@ -59,6 +113,68 @@
       and software development.
     </p>
   </article>
+ 
+ 
+ <!-- ========================= -->
+<!-- AI-PRIORITY SERVICE OFFER -->
+<!-- ========================= -->
+
+<section aria-labelledby="plant-walks">
+  <h2 id="plant-walks">Taimede määramise retked ja AI-toega töötoad</h2>
+
+  <p>
+    Tule taimede määramise retkele Lõuna-Eesti võluvasse metsa-aasale
+    või kutsu mind enda juurde üle Eesti.
+    Recetify kasutab mobiilset koolituskeskust ning saab korraldada
+    õppe-retki ka sinu aasal, metsas või muus looduskeskkonnas.
+  </p>
+
+  <p>
+    Retkedel avastame, kuidas loodus ja tehnoloogia saavad üksteist täiendada.
+    Kasutame kaasaegseid taimetuvastuse rakendusi ning tehisintellekti
+    (nt Flora Incognita, ChatGPT, Perplexity),
+    et õppida taimi määrama ja nende kohta sügavamat infot leidma.
+  </p>
+
+  <ul>
+    <li><strong>Vorm:</strong> eksklusiivne väikese grupi retk (kuni 5 osalejat)</li>
+    <li><strong>Kestus:</strong> 1–2 tundi</li>
+    <li><strong>Hind:</strong> 77 € inimese kohta terve retke eest</li>
+    <li><strong>Asukoht:</strong> Lõuna-Eesti või tellija valitud paik üle Eesti</li>
+    <li><strong>Lisakulud:</strong> kaugemale sõidu korral kokkuleppeline transporditasu</li>
+  </ul>
+
+  <p>
+    Retk algab Flora Incognita äpi koolitusega, kus osalejad õpivad kiiresti
+    taimi määrama nutiseadme abil.
+    Praktilises osas määrame taimi looduses ning uurime,
+    kuidas AI-tööriistade abil taimedest lisainfot leida.
+    Näitena kasutatakse „Taimetark” Space’i,
+    mille kaudu saab selgeks ka lihtsate promptide ja
+    AI-kasutuse põhitõed.
+  </p>
+
+  <p>
+    Osalejad saavad lisaks teadmistele nautida värsket õhku,
+    rahulikku looduskeskkonda ning võimalust pildistada
+    metsa- ja aasmaastikke.
+    Retk sobib nii üksikisikutele, sõpruskondadele
+    kui ka kollektiividele.
+  </p>
+  <p>
+  Retked toimuvad lumevabal ajal –
+  lumega mets on küll kaunis,
+  kuid taimede määramine toimib paremini,
+  kui temperatuur on vähemalt +5&nbsp;°C.
+</p>
+
+  <p>
+    Huvi korral osalemiseks või töötoa tellimiseks
+    kirjuta aadressil
+    <a href="mailto:recetifyou@gmail.com">recetifyou@gmail.com</a>.
+  </p>
+</section>
+
 
   <!-- ========================= -->
   <!-- MACHINE-READABLE SUMMARY -->
@@ -121,14 +237,14 @@
 
     <!-- Facebook embed (correctly shows post text + image) -->
     <figure>
-      <iframe src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/Recetify/posts/POST_ID&show_text=true&width=500"
-              width="500" height="600"
-              style="border:none;overflow:hidden"
-              scrolling="no"
-              frameborder="0"
-              allowfullscreen
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-      </iframe>
+      <iframe src="https://www.facebook.com/plugins/post.php?href=https://www.facebook.com/Recetify/posts/pfbid01CwxhDg23zB6UoCgx3ddAiFCSmHDHRUyHv4VQBeLnoiHYhg5zHx3VTW26vNCLP66l&show_text=true&width=500"
+        width="500" height="600"
+        style="border:none;overflow:hidden"
+        scrolling="no"
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+</iframe>
       <figcaption>See our latest post on Facebook.</figcaption>
     </figure>
   </section>
