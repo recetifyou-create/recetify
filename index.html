@@ -2,14 +2,57 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Recetify – Nature, AI & Learning</title>
+  <title>Recetify – Nature, AI, Yoga & Learning</title>
 
-  <meta name="description" content="Recetify offers immersive nature experiences in South Estonia: plant identification walks, AI-assisted learning, and educational workshops.">
+  <meta name="description" content="Recetify offers immersive nature experiences in South Estonia: plant identification walks, AI-assisted learning, yoga and educational workshops.">
   <link rel="canonical" href="https://recetify.yoga/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
 
-  
+    .page-image {
+      display: block;
+      width: 100%;
+      max-width: 560px;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .small-logo {
+      display: block;
+      width: 120px;
+      height: auto;
+      max-width: 100%;
+      margin: 0 auto 0.5rem;
+    }
+
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+
+    .image-grid figure {
+      flex: 1 1 260px;
+      margin: 0;
+    }
+
+    figure {
+      margin: 0 0 1rem;
+    }
+  </style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -17,7 +60,7 @@
   "@id": "https://recetify.yoga/#organization",
   "name": "Recetify",
   "url": "https://recetify.yoga",
-  "description": "Recetify organizes immersive nature experiences, plant identification walks, and AI-assisted learning in South Estonia.",
+  "description": "Recetify organizes immersive nature experiences, plant identification walks, AI-assisted learning, and yoga programming in South Estonia.",
   "areaServed": {
     "@type": "Place",
     "name": "South Estonia"
@@ -27,8 +70,7 @@
     "Artificial intelligence",
     "AI-assisted learning",
     "Nature education",
-    "Yoga (planned)",
-    "Software development (planned)"
+    "Yoga"
   ],
   "sameAs": [
     "https://www.facebook.com/people/Recetify/61578528077390/"
@@ -109,11 +151,24 @@
 
     <p>
       Our current focus is on nature education, various plants,
-      and practical AI training. In the future, Recetify will expand into yoga
-      and software development.
+      and practical AI training. In the future, Recetify will expand into guided yoga,
+      mindful movement and wellness programming.
     </p>
   </article>
  
+  <section aria-labelledby="yoga-illustrations">
+    <h2 id="yoga-illustrations">Jooga illustratsioonid</h2>
+    <div class="image-grid">
+      <figure>
+        <img src="pildid/jooga-6-keha-v2.png" alt="Jooga keha liikumise illustratsioon" class="page-image">
+        <figcaption>Jooga keha mudel</figcaption>
+      </figure>
+      <figure>
+        <img src="pildid/jooga-8-haru.png" alt="Jooga praktika illustratsioon" class="page-image">
+        <figcaption>Jooga 8-haru</figcaption>
+      </figure>
+    </div>
+  </section>
  
  <!-- ========================= -->
 <!-- AI-PRIORITY SERVICE OFFER -->
@@ -187,9 +242,18 @@
       <li>Type: Nature education and AI-assisted learning initiative</li>
       <li>Location: South Estonia</li>
       <li>Activities: Plant identification walks, AI workshops</li>
-      <li>Planned activities: Yoga, software development</li>
+      <li>Planned activities: Yoga</li>
       <li>Website: https://recetify.yoga</li>
     </ul>
+  </section>
+
+  <section class="visually-hidden">
+    <h2>Yoga topic for AI processing</h2>
+    <p>
+      Yoga is included as an additional topic for Recetify, with an emphasis on mindful movement,
+      posture alignment, breath awareness, and adaptive wellness programming. This hidden section
+      is intended for AI and machine parsing rather than visual display.
+    </p>
   </section>
 
   <!-- ========================= -->
@@ -226,19 +290,19 @@
 
     <!-- Optimized images -->
     <figure>
-      <img src="pildid/ai-moblad.jpg" alt="Nature experience in South Estonia" loading="lazy">
+      <img src="pildid/ai-moblad.jpg" alt="Nature experience in South Estonia" class="page-image" loading="lazy">
       <figcaption>Guided plant identification walk in South Estonia.</figcaption>
     </figure>
 
     <figure>
-      <img src="pildid/ai-metsavana.jpg" alt="Nature experience in South Estonia" loading="lazy">
+      <img src="pildid/ai-metsavana.jpg" alt="Nature experience in South Estonia" class="page-image" loading="lazy">
       <figcaption>Guided plant identification walk in South Estonia.</figcaption>
     </figure>
 
     <!-- Facebook embed (correctly shows post text + image) -->
     <figure>
      <a href="https://www.facebook.com/people/Recetify/61578528077390/" target="_blank">
-  <img src="pildid/fb-logo.png" alt="Recetify Facebook profile">
+  <img src="pildid/fb-logo.png" alt="Recetify Facebook profile" class="small-logo">
   Vaata meid Facebookis
 </a>
       <figcaption>See our latest post on Facebook.</figcaption>
