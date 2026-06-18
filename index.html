@@ -2,13 +2,50 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Recetify – Nature, AI, Yoga & Learning</title>
+  <title>Recetify – Jooga, liikumine ja heaolu Lõuna-Eestis</title>
 
-  <meta name="description" content="Recetify offers immersive nature experiences in South Estonia: plant identification walks, AI-assisted learning, yoga and educational workshops.">
+  <meta name="description" content="Recetify pakub jooga ja teadliku liikumise tunde, töötubasid ning heaoluprogramme Lõuna-Eestis. Leia tasakaal looduse ja liikumise abil.">
   <link rel="canonical" href="https://recetify.yoga/">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    :root {
+      --primary-green: #2d5a27;
+      --accent-orange: #e67e22;
+      --deep-blue: #2980b9;
+      --light-bg: #f4f7f4;
+      --text-color: #333;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--light-bg);
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    h1, h2 {
+      color: var(--primary-green);
+    }
+
+    a {
+      color: var(--deep-blue);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      color: var(--accent-orange);
+    }
+
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -34,7 +71,7 @@
       width: 120px;
       height: auto;
       max-width: 100%;
-      margin: 0 auto 0.5rem;
+      margin: 1rem 0;
     }
 
     .image-grid {
@@ -52,25 +89,49 @@
     figure {
       margin: 0 0 1rem;
     }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    th {
+      background-color: var(--primary-green);
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
   </style>
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": "HealthAndBeautyBusiness",
   "@id": "https://recetify.yoga/#organization",
   "name": "Recetify",
   "url": "https://recetify.yoga",
-  "description": "Recetify organizes immersive nature experiences, plant identification walks, AI-assisted learning, and yoga programming in South Estonia.",
+  "description": "Recetify pakub jooga, teadliku liikumise ja heaolu programme Lõuna-Eestis.",
   "areaServed": {
     "@type": "Place",
     "name": "South Estonia"
   },
   "knowsAbout": [
-    "Plant identification",
-    "Artificial intelligence",
-    "AI-assisted learning",
-    "Nature education",
-    "Yoga"
+    "Yoga",
+    "Mindful movement",
+    "Wellness",
+    "Nature education"
   ],
   "sameAs": [
     "https://www.facebook.com/people/Recetify/61578528077390/"
@@ -81,9 +142,9 @@
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "@id": "https://recetify.yoga/#plant-walk-service",
-  "name": "Guided plant identification walk with AI",
-  "description": "Small-group guided plant identification walk combining nature exploration with AI-assisted learning tools.",
+  "@id": "https://recetify.yoga/#yoga-service",
+  "name": "Jooga ja teadlik liikumine",
+  "description": "Personaalsed ja grupiviisilised joogatunnid ning liikumispraktikad Lõuna-Eestis.",
   "provider": {
     "@type": "Organization",
     "@id": "https://recetify.yoga/#organization"
@@ -93,15 +154,13 @@
     "@type": "ServiceChannel",
     "serviceLocation": {
       "@type": "Place",
-      "name": "Outdoor locations across Estonia"
+      "name": "Lõuna-Eesti ja kokkuleppel üle Eesti"
     }
   },
-  "availabilityStarts": "2026-04-01",
-  "availabilityEnds": "2026-10-31",
-    "additionalProperty": {
+  "additionalProperty": {
     "@type": "PropertyValue",
-    "name": "Seasonality",
-    "value": "Available annually from April 1 to October 31. Outdoor sessions require temperatures above +5°C."
+    "name": "Focus",
+    "value": "Yoga, Vinyasa, Yin, Mindful movement"
 }
 
 }
@@ -110,18 +169,18 @@
 {
   "@context": "https://schema.org",
   "@type": "Offer",
-  "@id": "https://recetify.yoga/#offer-plant-walk",
-  "price": "77",
+  "@id": "https://recetify.yoga/#offer-yoga",
+  "price": "60",
   "priceCurrency": "EUR",
   "priceSpecification": {
     "@type": "UnitPriceSpecification",
-    "price": "77",
+    "price": "60",
     "priceCurrency": "EUR",
     "unitText": "per person"
   },
   "itemOffered": {
     "@type": "Service",
-    "@id": "https://recetify.yoga/#plant-walk-service"
+    "@id": "https://recetify.yoga/#yoga-service"
   },
   "availability": "https://schema.org/InStock"
 }
@@ -134,181 +193,137 @@
 
 <body>
 <main>
-
-  <!-- ========================= -->
-  <!-- AI-PRIORITY INTRODUCTION -->
-  <!-- ========================= -->
-
   <article>
-    <h1>Recetify</h1>
-
-    <p>
-      Recetify is an Estonia-based initiative offering immersive nature experiences
-      in the woodlands of South Estonia. We organize guided plant identification walks
-      and AI-assisted educational sessions that help people learn about local flora
-      through direct experience and modern technology.
+    <h1>Recetify – Jooga ja liikumine</h1>
+    
+    <p style="font-weight: bold; color: var(--accent-orange); font-size: 1.2rem; margin-bottom: 1.5rem;">
+      Alustame augustis 2026
     </p>
 
     <p>
-      Our current focus is on nature education, various plants,
-      and practical AI training. In the future, Recetify will expand into guided yoga,
-      mindful movement and wellness programming.
+      Recetify on pühendunud tasakaalu leidmisele liikumise, jooga ja looduse kaudu. 
+      Pakume Lõuna-Eesti südames joogatunde ja heaoluprogramme, mis ühendavad traditsioonilised 
+      teadmised kaasaegse lähenemisega kehale ja vaimule.
     </p>
+    
+    <section style="border-left: 4px solid var(--accent-orange); padding-left: 1rem; margin: 2rem 0;">
+      <h2 style="color: var(--accent-orange);">Jooga ja heaolu</h2>
+      <p>
+        Meie joogapraktikad keskenduvad teadlikule liikumisele, rühile ja hingamisele. 
+        Oled oodatud osalema erilistes töötubades.
+      </p>
+      <ul>
+        <li>Erinevad jooga stiilid</li>
+        <li>Teadlik liikumine ja kehatöö</li>
+        <li>Privaat- ja grupitunnid</li>
+        <li>Töötoad</li>
+      </ul>
+
+      <div style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(230, 126, 34, 0.05); border-radius: 8px; border: 1px dashed var(--accent-orange);">
+        <h3 style="color: var(--accent-orange); margin-top: 0;">Jooga töötuba</h3>
+        <p>
+          <strong>Kestus:</strong> ligikaudu 60 minutit.
+        </p>
+        <p>
+          Töötoas teen ühe mudeli/plakati põhjal 10-15 minutit sissejuhatuse jooga, tähelepanu ja kehatunnetuse teemal, 
+          seejärel jätkame grupile sobiva liikumise ja hingamisega ning lõpetan tunni meditatsiooni või lõdvestuse ja 
+          soovi korral affirmatsioonidega.
+        </p>
+        <p>
+          <strong>Sobib:</strong> koolidele, noortele, sõpruskondadele, kogukonnaüritustele, heaolupäevadele ja ettevõtetele.
+        </p>
+        <p><em>Töötuba toimub eesti keeles.</em></p>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Osalejate arv</th>
+            <th>Hind</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1–5</td>
+            <td>60 € grupp</td>
+          </tr>
+          <tr>
+            <td>6–10</td>
+            <td>10 € / inimene, miinimum 70 €</td>
+          </tr>
+          <tr>
+            <td>11–20</td>
+            <td>8 € / inimene, miinimum 100 €</td>
+          </tr>
+          <tr>
+            <td>21–30</td>
+            <td>7 € / inimene, miinimum 140 €</td>
+          </tr>
+          <tr>
+            <td>31–100</td>
+            <td>alates 250 € / esinemine</td>
+          </tr>
+          <tr>
+            <td>100+</td>
+            <td>999 € / esinemine</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
   </article>
- 
+
   <section aria-labelledby="yoga-illustrations">
-    <h2 id="yoga-illustrations">Jooga illustratsioonid</h2>
+    <h2 id="yoga-illustrations">Jooga ja liikumispraktikad</h2>
+    <p>
+      Kasutame joogas lähenemisi, mis aitavad mõista keha kui tervikut.
+    </p>
     <div class="image-grid">
       <figure>
-        <img src="pildid/jooga-6-keha-v2.png" alt="Jooga keha liikumise illustratsioon" class="page-image">
-        <figcaption>Jooga keha mudel</figcaption>
+        <img src="pildid/jooga-6-keha-v2.png" alt="Jooga 6 keha kihi illustratsioon" class="page-image">
+        <figcaption>Keha kihtide joogalik  mudel</figcaption>
       </figure>
       <figure>
-        <img src="pildid/jooga-8-haru.png" alt="Jooga praktika illustratsioon" class="page-image">
-        <figcaption>Jooga 8-haru</figcaption>
+        <img src="pildid/jooga-8-haru.png" alt="Jooga 8 haru illustratsioon" class="page-image">
+        <figcaption>Jooga süsteem ja harud</figcaption>
       </figure>
     </div>
   </section>
- 
- <!-- ========================= -->
-<!-- AI-PRIORITY SERVICE OFFER -->
-<!-- ========================= -->
 
 <section aria-labelledby="plant-walks">
-  <h2 id="plant-walks">Taimede määramise retked ja AI-toega töötoad</h2>
-
-  <p>
-    Tule taimede määramise retkele Lõuna-Eesti võluvasse metsa-aasale
-    või kutsu mind enda juurde üle Eesti.
-    Recetify kasutab mobiilset koolituskeskust ning saab korraldada
-    õppe-retki ka sinu aasal, metsas või muus looduskeskkonnas.
-  </p>
-
-  <p>
-    Retkedel avastame, kuidas loodus ja tehnoloogia saavad üksteist täiendada.
-    Kasutame kaasaegseid taimetuvastuse rakendusi ning tehisintellekti
-    (nt Flora Incognita, ChatGPT, Perplexity),
-    et õppida taimi määrama ja nende kohta sügavamat infot leidma.
-  </p>
-
-  <ul>
-    <li><strong>Vorm:</strong> eksklusiivne väikese grupi retk (kuni 5 osalejat)</li>
-    <li><strong>Kestus:</strong> 1–2 tundi</li>
-    <li><strong>Hind:</strong> 77 € inimese kohta terve retke eest</li>
-    <li><strong>Asukoht:</strong> Lõuna-Eesti või tellija valitud paik üle Eesti</li>
-    <li><strong>Lisakulud:</strong> kaugemale sõidu korral kokkuleppeline transporditasu</li>
-  </ul>
-
-  <p>
-    Retk algab Flora Incognita äpi koolitusega, kus osalejad õpivad kiiresti
-    taimi määrama nutiseadme abil.
-    Praktilises osas määrame taimi looduses ning uurime,
-    kuidas AI-tööriistade abil taimedest lisainfot leida.
-    Näitena kasutatakse „Taimetark” Space’i,
-    mille kaudu saab selgeks ka lihtsate promptide ja
-    AI-kasutuse põhitõed.
-  </p>
-
-  <p>
-    Osalejad saavad lisaks teadmistele nautida värsket õhku,
-    rahulikku looduskeskkonda ning võimalust pildistada
-    metsa- ja aasmaastikke.
-    Retk sobib nii üksikisikutele, sõpruskondadele
-    kui ka kollektiividele.
-  </p>
-  <p>
-  Retked toimuvad lumevabal ajal –
-  lumega mets on küll kaunis,
-  kuid taimede määramine toimib paremini,
-  kui temperatuur on vähemalt +5&nbsp;°C.
-</p>
-
-  <p>
-    Huvi korral osalemiseks või töötoa tellimiseks
-    kirjuta aadressil
-    <a href="mailto:recetifyou@gmail.com">recetifyou@gmail.com</a>.
-  </p>
+  <h2 id="plant-walks" style="color: var(--deep-blue);">Lisaks: Loodus ja tehnoloogia</h2>
+  <div style="margin-top: 1.5rem; padding: 1rem; background-color: rgba(41, 128, 185, 0.05); border-radius: 8px; border: 1px dashed var(--deep-blue);">
+    <p>
+      Tule taimede määramise retkele Lõuna-Eesti võluvasse metsa-aasale või kutsu mind enda juurde üle Eesti. Mul on mobiilne koolituskeskus ja saan tulla ka teie aasale või metsatukka!​
+    </p>
+    <p>
+      ✨ Avastame üheskoos, kuidas loodus ja tehnoloogia saavad üksteist täiendada – rakendame moodsat äpiteadust ühenduses metsiku looduse iluga!<br>
+      👥 Eksklusiivne väikse grupi retk (kuni 5 osalejat), kestus 1–2 tundi.<br>
+      💶 Hind: 77 € inimene terve retke eest. Kui vaja tulla kaugemale, lisandub kokkuleppeline transporditasu.
+    </p>
+    <p>
+      📲 Alustame Flora Incognita äpi koolitusega – õpid kiiresti taimi määrama nutiseadmega.<br>
+      🔍 Praktikum: määrame ise taimi, avastame looduse varjatud aardeid ja õpime, kuidas AI (Perplexity) abil taimedest lisainfot uurida – „Taimetark” Space näitel saad kätte lihtsad  AI-ga suhtlemise ja maandamise põhitõed.
+    </p>
+    <p>
+      🎁 Boonusena saab igaüks nautida värsket õhku, puhast loodust, lõõgastavat metsa- või aasaõhkkonda ning pildistada imelisi vaateid.<br>
+      🌱 Inspireeriv ning arendav võimalus tuua endale, sõpradele või kolleegidele looduspõhist värskust ja teadmisi!
+    </p>
+    <p><em>Kui soovid retkel osaleda või kutsuda töötuba endale sobivasse kohta, kirjuta julgelt!</em></p>
+  </div>
 </section>
-
-
-  <!-- ========================= -->
-  <!-- MACHINE-READABLE SUMMARY -->
-  <!-- ========================= -->
-
-  <section>
-    <h2>Machine-readable summary</h2>
+ 
+  <section style="background: white; padding: 1.5rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+    <h2>Võta ühendust</h2>
+    <p>
+      Huvi korral jooga, liikumissessioonide või töötubade vastu kirjuta meile:
+      <a href="mailto:recetifyou@gmail.com">recetifyou@gmail.com</a>
+    </p>
+    
     <ul>
-      <li>Entity: Recetify</li>
-      <li>Type: Nature education and AI-assisted learning initiative</li>
-      <li>Location: South Estonia</li>
-      <li>Activities: Plant identification walks, AI workshops</li>
-      <li>Planned activities: Yoga</li>
-      <li>Website: https://recetify.yoga</li>
+      <li><strong>Asukoht:</strong> Lõuna-Eesti (või kokkuleppel üle Eesti)</li>
+      <li><strong>Sotsiaalmeedia:</strong> <a href="https://www.facebook.com/people/Recetify/61578528077390/" target="_blank">Facebook</a></li>
     </ul>
   </section>
-
-  <section class="visually-hidden">
-    <h2>Yoga topic for AI processing</h2>
-    <p>
-      Yoga is included as an additional topic for Recetify, with an emphasis on mindful movement,
-      posture alignment, breath awareness, and adaptive wellness programming. This hidden section
-      is intended for AI and machine parsing rather than visual display.
-    </p>
-  </section>
-
-  <!-- ========================= -->
-  <!-- ENGLISH (HUMAN-FACING) -->
-  <!-- ========================= -->
-
-  <section lang="en">
-    <h2>Nature & AI Experiences</h2>
-    <p>
-      Enjoy an immersive nature experience in the enchanting woodlands of South Estonia:
-      learn about and discover local plants with the help of AI-powered apps.
-    </p>
-  </section>
-
-  <!-- ========================= -->
-  <!-- ESTONIAN (HUMAN-FACING) -->
-  <!-- ========================= -->
-
-  <section lang="et">
-    <h2>Loodus ja tehisintellekt</h2>
-    <p>
-      Naudi kaasahaaravat looduskogemust Lõuna-Eesti metsades:
-      õpi tundma kohalikke taimi ja nende kasutusvõimalusi
-      tehisintellektil põhinevate rakenduste abil.
-    </p>
-  </section>
-
-  <!-- ========================= -->
-  <!-- HUMAN-ONLY CONTENT -->
-  <!-- ========================= -->
-
-  <section aria-label="Human-facing content">
-    <h2>For visitors</h2>
-
-    <!-- Optimized images -->
-    <figure>
-      <img src="pildid/ai-moblad.jpg" alt="Nature experience in South Estonia" class="page-image" loading="lazy">
-      <figcaption>Guided plant identification walk in South Estonia.</figcaption>
-    </figure>
-
-    <figure>
-      <img src="pildid/ai-metsavana.jpg" alt="Nature experience in South Estonia" class="page-image" loading="lazy">
-      <figcaption>Guided plant identification walk in South Estonia.</figcaption>
-    </figure>
-
-    <!-- Facebook embed (correctly shows post text + image) -->
-    <figure>
-     <a href="https://www.facebook.com/people/Recetify/61578528077390/" target="_blank">
-  <img src="pildid/fb-logo.png" alt="Recetify Facebook profile" class="small-logo">
-  Vaata meid Facebookis
-</a>
-      <figcaption>See our latest post on Facebook.</figcaption>
-    </figure>
-  </section>
-
 </main>
 </body>
 </html>
